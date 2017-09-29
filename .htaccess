@@ -1,5 +1,5 @@
 <ifmodule mod_deflate.c>
-AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
+AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript
 </ifmodule>
 
 <ifmodule mod_expires.c>
@@ -7,8 +7,8 @@ ExpiresActive On
 
 ExpiresDefault "access plus 1 days"
 
-ExpiresByType image/jpeg "access plus 4 weeks"
-ExpiresByType image/png "access plus 30 days"
+ExpiresByType image/jpg "access plus 1 days"
+ExpiresByType image/png "access plus 1 days"
 
 ExpiresByType text/css "access plus 604800 seconds"
 ExpiresByType text/javascript "access plus 604800 seconds"
